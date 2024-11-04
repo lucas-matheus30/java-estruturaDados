@@ -28,8 +28,8 @@ public class ExercicioStack {
 				break;
 			case 1:
 				System.out.println("Adicione um livro a pilha: ");
-				String livro = leia.nextLine();
-				pilhaLivros.push(livro);
+				String livro = leia.nextLine(); // cria a variavel livro e armazena o que o usuário digitar.
+				pilhaLivros.push(livro); // adiciona a pilha o livro digitado
 				System.out.println("Livro: " + livro + " foi adicionado!");
 				break;
 			case 2:
@@ -38,7 +38,7 @@ public class ExercicioStack {
 				} else {
 					System.out.println("Listando todos os Livros: ");
 
-					Iterator<String> iPilhaLivros = pilhaLivros.iterator();
+					Iterator<String> iPilhaLivros = pilhaLivros.iterator(); // iterator para percorrer a pilha e listar o que estiver contido nela.
 
 					while (iPilhaLivros.hasNext()) {
 						System.out.println(iPilhaLivros.next());
@@ -47,7 +47,7 @@ public class ExercicioStack {
 				}
 				break;
 			case 3:
-				if (pilhaLivros.isEmpty()) {
+				if (pilhaLivros.isEmpty()) { // se a pilha estiver vazia mostra o erro.
 					System.out.println("Não foi possivel retirar, pilha vazia!");
 				} else {
 					System.out.println("Retirando o Livro da pilha: ");

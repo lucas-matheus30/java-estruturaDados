@@ -30,8 +30,8 @@ public class ExercicioQueue {
 				break;
 			case 1:
 				System.out.println("Adicionando Cliente: ");
-				String cliente = leia.nextLine();
-				clientes.add(cliente);
+				String cliente = leia.nextLine(); // cria a variavel cliente e armazena o seu nome
+				clientes.add(cliente); // adiciona o nome do cliente a fila 
 				System.out.println("Cliente: " + cliente + " adicionado a fila!");
 				break;
 			case 2:
@@ -40,7 +40,7 @@ public class ExercicioQueue {
 				} else {
 					System.out.println("Fila de clientes: ");
 
-					Iterator<String> iClientes = clientes.iterator();
+					Iterator<String> iClientes = clientes.iterator(); // iterator para percorrer e listar todos os nomes da fila
 
 					while (iClientes.hasNext()) {
 						System.out.println(iClientes.next());
